@@ -1,0 +1,22 @@
+/* Your styles can go here. */
+/* Change the background color of all of the form input boxes 
+and submit button to be yellow */
+   
+input {
+
+    background-color: yellow;
+    
+    
+}
+
+/*Change the text in the last name field to be bolded.*/
+input[name="lastname"] {
+
+    font-weight: bold
+}
+
+/*Draw a border around the instruction text*/
+label[name="instruction"] {
+    border-style: solid;
+    border-color: pink;
+}

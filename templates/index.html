@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<!-- your html goes here -->
+ 
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-8"> 
+            <img src="https://hoojobs.com/blog/wp-content/uploads/2012/05/Find-a-Job-630x250.png" style="width:800px;height:250px;">
+        </div>
+
+        <div class="col-md-4"> 
+            <img src="https://www.businessmarketingblog.org/wp-content/uploads/2012/01/find-job.jpg" style="width:450px;height:250px;">
+        </div>           
+    </div>
+</div>
+    
+<form action="/application-form" method="GET" >
+<div class="container">
+    <div class="row">
+      <input type="submit" value="Start Application">   
+    </div>
+</div>
+</form>
+
+{% endblock %}
+
+

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>Welcom to Job Application!</h1>
+
+<!-- your html goes here -->
+<form action="/application-success" method="GET">
+  <label class="col-sm-2" name="firstname">First Name:</label>
+    <input class="col-sm-3" type="text" name="firstname" required>
+  <br><br>
+  <label class="col-sm-2" name="lastname">Last Name:</label>
+    <input class="col-sm-3" type="text" name="lastname" required>
+  <br><br>
+  <label class="col-sm-2" name="salary">Salary (enter number):</label>
+    <input class="col-sm-3" type="number" name="salary" required>
+  <br><br>
+  <label class="col-sm-2">Job Title:</label>
+    <select class="col-sm-3" name="jobtitle" required>
+      {% for jobitem in job_list %}
+        <option value="{{jobitem}}" >{{jobitem}}</option>
+      {% endfor %}
+    </select>
+  <br><br>
+  <input class="col-sm-2" type="submit">
+</form>
+<br><br>
+<label name="instruction">welcome to our job application system.</label>
+
+{% endblock %}
+
+
+
